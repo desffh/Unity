@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class1th (Gizmo System)/Scenes/Class1th (Scenes).unity
+- path: Assets/Class3th (Life Cycle)/Scenes/Class3th (Scene).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

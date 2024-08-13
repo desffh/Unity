@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class3th (Life Cycle)/Scenes/Class3th (Scene).unity
+- path: Assets/Class4th (GetComponent)/Scenes/Class4th (Scene).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

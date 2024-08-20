@@ -7,17 +7,28 @@ public class ButtonManager : MonoBehaviour
 {
     [SerializeField] string [] buttonNames;
 
-    [SerializeField] Text[] buttonTexts; 
+    [SerializeField] Text[] buttonTexts;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        for (int i = 0; i < buttonTexts.Length; i++)
+        {
+            buttonTexts[i].text = buttonNames[i];
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void NewGame()
     {
-        
+        Debug.Log("New Game");
     }
+    public void Continue()
+    {
+        Debug.Log("Continue");
+    }
+    public void Exit()
+    {
+        Debug.Log("Exit");
+    }
+
 }

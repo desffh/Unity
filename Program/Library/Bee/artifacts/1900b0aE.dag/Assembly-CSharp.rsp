@@ -362,6 +362,7 @@
 "Assets/Class5th (Translate)/Scripts/AirCraft.cs"
 "Assets/Class7th (User Interface)/Scripts/ButtonManager.cs"
 "Assets/Class9th (Instantiate)/Scripts/CreateManager.cs"
+"Assets/Class9th (Instantiate)/Scripts/Select.cs"
 -langversion:9.0
 /deterministic
 /optimize+

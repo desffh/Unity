@@ -4,24 +4,29 @@ using UnityEngine;
 
 public class CreateManager : MonoBehaviour
 {
-    [SerializeField] GameObject food;
+    [SerializeField] GameObject [] foods;
 
     [SerializeField] GameObject clone;
 
-    [SerializeField] float time;
+    [SerializeField] int count = 0;
 
-    // Update is called once per frame
-    void Update()
+    WaitForSeconds waitForSecond = new WaitForSeconds(5.0f);
+
+    private void Start()
     {
-        time += Time.deltaTime;
-
-        if (time >= 5.0f)
-        {
-            clone = Instantiate(food);
-
-            //clone.transform.position = Vector3.one; // == new Vector3(1, 1, 1);
-
-            time = 0.0f;
-        }
+        StartCoroutine(Create());
     }
+    IEnumerator Create()
+    {
+        while (count < foods.Length)
+        {
+            if(clone == null) // 오브젝트가 없다면
+            {
+                clone = Instantiate(foods[count++]);
+            }
+            yield return waitForSecond;
+        }        
+    }
+
+
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3883818418782465457}
   - component: {fileID: 8839781000390236696}
   - component: {fileID: 1270249181256121094}
+  - component: {fileID: 234401058908040127}
   m_Layer: 0
   m_Name: Avocado
   m_TagString: Untagged
@@ -105,3 +106,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.11585051, y: 0.053715065, z: 0.07967238}
   m_Center: {x: 0.002032796, y: -0.006714155, z: 0.0007947851}
+--- !u!114 &234401058908040127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8622039388221966985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls: []

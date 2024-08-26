@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class10th (Collsion)/Scenes/Class10th (Scenes).unity
+- path: Assets/Class11th (Sound)/Scenes/Class11th (Scenes).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

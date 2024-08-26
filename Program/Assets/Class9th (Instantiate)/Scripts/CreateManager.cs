@@ -4,29 +4,48 @@ using UnityEngine;
 
 public class CreateManager : MonoBehaviour
 {
-    [SerializeField] GameObject [] foods;
+    [SerializeField] GameObject food;
 
-    [SerializeField] GameObject clone;
+    [SerializeField] GameObject clone; // 게임오브젝트 접근하기 위한 참조변수
 
-    [SerializeField] int count = 0;
+    [SerializeField] float time;
 
-    WaitForSeconds waitForSecond = new WaitForSeconds(5.0f);
-
-    private void Start()
+    private void Update()
     {
-        StartCoroutine(Create());
-    }
-    IEnumerator Create()
-    {
-        while (count < foods.Length)
+        // time에 deltaTime 누적
+        time += Time.deltaTime;
+
+        if(time >= 5.0f)
         {
-            if(clone == null) // 오브젝트가 없다면
-            {
-                clone = Instantiate(foods[count++]);
-            }
-            yield return waitForSecond;
-        }        
+            clone = Instantiate(food);
+
+            time = 0.0f;
+        }
     }
+
+    //[SerializeField] GameObject [] foods;
+    //
+    //[SerializeField] GameObject clone;
+    //
+    //[SerializeField] int count = 0;
+    //
+    //WaitForSeconds waitForSecond = new WaitForSeconds(5.0f);
+    //
+    //private void Start()
+    //{
+    //    StartCoroutine(Create());
+    //}
+    //IEnumerator Create()
+    //{
+    //    while (count < foods.Length)
+    //    {
+    //        if(clone == null) // 오브젝트가 없다면
+    //        {
+    //            clone = Instantiate(foods[count++]);
+    //        }
+    //        yield return waitForSecond;
+    //    }        
+    //}
 
 
 }

@@ -151,12 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af35c2a12110d2f40bbf81b271dceac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foods:
-  - {fileID: 8792792886875894809, guid: 10040b7d42e2cd0448ea07c31469f30d, type: 3}
-  - {fileID: 8622039388221966985, guid: 56d1bb0c3f7fdfc4ab87837e73717e99, type: 3}
-  - {fileID: 2505368174314373090, guid: b1ec0451b09255649aed62f46c2c6e80, type: 3}
-  - {fileID: 3480982060999765621, guid: f00d29e05b6e0b4469f3bd90b07c62db, type: 3}
-  clone: {fileID: 0}
+  food: {fileID: 8792792886875894809, guid: 10040b7d42e2cd0448ea07c31469f30d, type: 3}
 --- !u!4 &338560497
 Transform:
   m_ObjectHideFlags: 0

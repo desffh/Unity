@@ -151,7 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af35c2a12110d2f40bbf81b271dceac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food: {fileID: 8792792886875894809, guid: 10040b7d42e2cd0448ea07c31469f30d, type: 3}
+  foods: []
+  clone: {fileID: 0}
+  count: 0
 --- !u!4 &338560497
 Transform:
   m_ObjectHideFlags: 0

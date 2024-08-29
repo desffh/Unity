@@ -8,6 +8,8 @@ public class Mouse : MonoBehaviour
 
     [SerializeField] RaycastHit rayCastHit;
 
+    [SerializeField] LayerMask layerMask;
+
     [SerializeField] Texture2D texture2D;
 
     // Start is called before the first frame update
@@ -23,9 +25,15 @@ public class Mouse : MonoBehaviour
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out rayCastHit, Mathf.Infinity))
+            if (Physics.Raycast(ray, out rayCastHit, Mathf.Infinity, layerMask))
             {
-                Debug.Log(rayCastHit.collider.name);
+                IInteractable interactable = rayCastHit.collider.GetComponent<IInteractable>();
+
+                if (interactable != null)
+                {
+                    interactable.Interact();
+                }
+                //Debug.Log(rayCastHit.collider.name);
             }
         }
     }
@@ -34,4 +42,6 @@ public class Mouse : MonoBehaviour
     {
         Debug.DrawRay(ray.origin, ray.direction, Color.red, 0.5f);
     }
+
+
 }

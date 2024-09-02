@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class14th (Pysics)/Scenes/Class14th (Scenes).unity
+- path: Assets/Class15th (Terrain)/Scenes/Class15th (Scenes).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
